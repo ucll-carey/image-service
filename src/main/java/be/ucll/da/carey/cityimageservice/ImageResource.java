@@ -1,16 +1,13 @@
 package be.ucll.da.carey.cityimageservice;
 
-import lombok.var;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.URL;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/")
 public class ImageResource {
